@@ -1,0 +1,9 @@
+name: CI- PR
+on: pull_request
+
+jobs:
+  common:
+    uses: https://github.com/Uzma-Solera/github-actions-reusable.git/.github/workflows/ci-pr.yml
+    with:
+      component_name: catalogue
+      app_type: nodejs
