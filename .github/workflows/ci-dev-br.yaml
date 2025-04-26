@@ -1,0 +1,12 @@
+name: CI- Dev Branch
+on:
+  push:
+    branches:
+      - "RB**"
+
+jobs:
+  common:
+    uses: https://github.com/Uzma-Solera/github-actions-reusable.git/.github/workflows/ci-dev-br.yml
+    with:
+      component_name: catalogue
+      app_type: nodejs

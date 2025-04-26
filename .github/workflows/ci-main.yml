@@ -1,0 +1,14 @@
+name: CI-Main
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+
+jobs:
+  common:
+    uses: https://github.com/Uzma-Solera/github-actions-reusable.git/.github/workflows/ci-main.yml
+    with:
+      component_name: catalogue
+      app_type: nodejs
